@@ -23,6 +23,21 @@
             font: 70px Comic Sans MS;
             text-shadow: 4px 4px #ff91a4;
         }
+	<script>
+function myFunction() {
+  var txt;
+  var person = prompt("Please enter your name:", "Harry Potter");
+  if (person == null || person == "") {
+    txt = "User cancelled the prompt.";
+  } else {
+    txt = "Hello " + person + "! How are you today?";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
 	</style>
     <head>
 	<link rel="shortcut icon" type="image/x-icon" href="fitdaddy.ico">
