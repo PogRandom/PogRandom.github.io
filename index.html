@@ -23,21 +23,6 @@
             font: 70px Comic Sans MS;
             text-shadow: 4px 4px #ff91a4;
         }
-	<script>
-function myFunction() {
-  var txt;
-  var person = prompt("Please enter your name:", "Harry Potter");
-  if (person == null || person == "") {
-    txt = "User cancelled the prompt.";
-  } else {
-    txt = "Hello " + person + "! How are you today?";
-  }
-  document.getElementById("demo").innerHTML = txt;
-}
-</script>
-
-</body>
-</html>
 	</style>
     <head>
 	<link rel="shortcut icon" type="image/x-icon" href="fitdaddy.ico">
@@ -51,28 +36,25 @@ function myFunction() {
 <HEAD> <TITLE>Activity - Insert animated GIF to HTML</TITLE> </HEAD>
 <BODY>
   <IMG SRC="gifbutsussy.gif">
-<!DOCTYPE html>
 <html>
-<body>
-
-<h2>JavaScript Prompt</h2>
-
-<button onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-  var txt;
-  var person = prompt("Please enter your name:", "Harry Potter");
-  if (person == null || person == "") {
-    txt = "User cancelled the prompt.";
-  } else {
-    txt = "Hello " + person + "! How are you today?";
-  }
-  document.getElementById("demo").innerHTML = txt;
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
 }
-</script>
 
-</body>
-</html>
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
